@@ -1,0 +1,17 @@
+module: Reach
+author: Sergio Fernández
+author_url: https://therapychat.com
+github_url: https://github.com/therapychat/Reach
+dash_url: https://therapychat.github.io/Reach/Reach.xml
+
+theme: fullwidth
+clean: true
+
+readme: README.md
+
+disable_search: true
+skip_undocumented: false
+hide_documentation_coverage: false
+
+copyright: '© 2017 [TherapyChat](https://therapychat.com) under [open source license](https://github.com/therapychat/Reach/blob/master/LICENSE).'
+swift_version: '3.1'

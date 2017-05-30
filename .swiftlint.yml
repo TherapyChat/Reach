@@ -1,0 +1,21 @@
+disabled_rules:
+  - function_parameter_count
+  - trailing_whitespace
+  - nesting
+  - identifier_name
+opt_in_rules:
+  - empty_count
+  - force_unwrapping
+  - private_outlet
+line_length: 120
+type_body_length:
+  warning: 300
+  error: 400
+variable_name:
+  excluded:
+    - id
+    - URL
+excluded:
+  - Tests/
+  - Carthage/
+  - Frameworks/

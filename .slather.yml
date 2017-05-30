@@ -1,0 +1,10 @@
+# .slather.yml
+
+coverage_service: cobertura_xml
+workspace: Reach.xcworkspace
+xcodeproj: Reach.xcodeproj
+scheme: Reach
+configuration: Test
+output_directory: coverage
+ignore:
+  - ../**/*/Xcode*

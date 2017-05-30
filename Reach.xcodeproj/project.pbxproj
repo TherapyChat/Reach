@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7952F281E2401DC0005C1AD /* Reach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C898111E1A773F00747C4F /* Reach.framework */; };
+		E7952F301E2401E60005C1AD /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7952F191E2401460005C1AD /* Nimble.framework */; };
+		E7952F331E2401F90005C1AD /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E7952F191E2401460005C1AD /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E7952F351E2402090005C1AD /* ReachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74098501E23FD230073A728 /* ReachTests.swift */; };
+		E7B9BAA91ED2E991007A4F53 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAA81ED2E991007A4F53 /* Reach.swift */; };
+		E7B9BAAB1ED2FFEC007A4F53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAAA1ED2FFEC007A4F53 /* Network.swift */; };
+		E7B9BAAD1ED315A2007A4F53 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAAC1ED315A2007A4F53 /* Callback.swift */; };
+		E7B9BAB11ED3227D007A4F53 /* ReachDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAB01ED3227D007A4F53 /* ReachDelegateMock.swift */; };
+		E7B9BAB31ED324AF007A4F53 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAB21ED324AF007A4F53 /* Delay.swift */; };
+		E7C898221E1A773F00747C4F /* Reach.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C898141E1A773F00747C4F /* Reach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7952F291E2401DC0005C1AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7C898081E1A773F00747C4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7C898101E1A773F00747C4F;
+			remoteInfo = Edge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7952F321E2401E90005C1AD /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E7952F331E2401F90005C1AD /* Nimble.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E74098501E23FD230073A728 /* ReachTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachTests.swift; sourceTree = "<group>"; };
+		E755E6F51E1A9EBC005CC3FE /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		E755E6F71E1A9EBC005CC3FE /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		E755E6F81E1A9EBC005CC3FE /* Profile.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Profile.xcconfig; sourceTree = "<group>"; };
+		E755E6F91E1A9EBC005CC3FE /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		E755E6FA1E1A9EBC005CC3FE /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
+		E755E6FB1E1A9EBC005CC3FE /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		E76567391E55D434004F48D7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../../Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		E7952F191E2401460005C1AD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		E7952F231E2401DC0005C1AD /* ReachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7952F271E2401DC0005C1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B9BAA81ED2E991007A4F53 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
+		E7B9BAAA1ED2FFEC007A4F53 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		E7B9BAAC1ED315A2007A4F53 /* Callback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
+		E7B9BAB01ED3227D007A4F53 /* ReachDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachDelegateMock.swift; sourceTree = "<group>"; };
+		E7B9BAB21ED324AF007A4F53 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		E7C898111E1A773F00747C4F /* Reach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7C898141E1A773F00747C4F /* Reach.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reach.h; sourceTree = "<group>"; };
+		E7C898151E1A773F00747C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7952F201E2401DC0005C1AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7952F281E2401DC0005C1AD /* Reach.framework in Frameworks */,
+				E7952F301E2401E60005C1AD /* Nimble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C8980D1E1A773F00747C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E72DBE4A1E268C3800DFDA3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7C898141E1A773F00747C4F /* Reach.h */,
+				E7C898151E1A773F00747C4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E755E6F31E1A9EBC005CC3FE /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				E755E6F51E1A9EBC005CC3FE /* Common.xcconfig */,
+				E755E6F61E1A9EBC005CC3FE /* Environments */,
+				E755E6FB1E1A9EBC005CC3FE /* Framework.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		E755E6F61E1A9EBC005CC3FE /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				E755E6F71E1A9EBC005CC3FE /* Debug.xcconfig */,
+				E755E6F81E1A9EBC005CC3FE /* Profile.xcconfig */,
+				E755E6F91E1A9EBC005CC3FE /* Release.xcconfig */,
+				E755E6FA1E1A9EBC005CC3FE /* Test.xcconfig */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		E76DB9461E1CF7FD00D7FA0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E76567391E55D434004F48D7 /* Result.framework */,
+				E7952F191E2401460005C1AD /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7952F241E2401DC0005C1AD /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E74098501E23FD230073A728 /* ReachTests.swift */,
+				E7B9BAB01ED3227D007A4F53 /* ReachDelegateMock.swift */,
+				E7B9BAB21ED324AF007A4F53 /* Delay.swift */,
+				E7952F271E2401DC0005C1AD /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E7C898071E1A773F00747C4F = {
+			isa = PBXGroup;
+			children = (
+				E7C898131E1A773F00747C4F /* Source */,
+				E72DBE4A1E268C3800DFDA3C /* Supporting Files */,
+				E755E6F31E1A9EBC005CC3FE /* Configurations */,
+				E7952F241E2401DC0005C1AD /* Tests */,
+				E7C898121E1A773F00747C4F /* Products */,
+				E76DB9461E1CF7FD00D7FA0C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E7C898121E1A773F00747C4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7C898111E1A773F00747C4F /* Reach.framework */,
+				E7952F231E2401DC0005C1AD /* ReachTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7C898131E1A773F00747C4F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E7B9BAA81ED2E991007A4F53 /* Reach.swift */,
+				E7B9BAAA1ED2FFEC007A4F53 /* Network.swift */,
+				E7B9BAAC1ED315A2007A4F53 /* Callback.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E7C8980E1E1A773F00747C4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7C898221E1A773F00747C4F /* Reach.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E7952F221E2401DC0005C1AD /* ReachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7952F2B1E2401DC0005C1AD /* Build configuration list for PBXNativeTarget "ReachTests" */;
+			buildPhases = (
+				E7952F1F1E2401DC0005C1AD /* Sources */,
+				E7952F201E2401DC0005C1AD /* Frameworks */,
+				E7952F321E2401E90005C1AD /* Copy Frameworks */,
+				E7952F211E2401DC0005C1AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7952F2A1E2401DC0005C1AD /* PBXTargetDependency */,
+			);
+			name = ReachTests;
+			productName = Tests;
+			productReference = E7952F231E2401DC0005C1AD /* ReachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7C898101E1A773F00747C4F /* Reach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7C898251E1A773F00747C4F /* Build configuration list for PBXNativeTarget "Reach" */;
+			buildPhases = (
+				E7C8982D1E1A91E300747C4F /* Swift Lint */,
+				E7C8980C1E1A773F00747C4F /* Sources */,
+				E7C8980D1E1A773F00747C4F /* Frameworks */,
+				E7C8980E1E1A773F00747C4F /* Headers */,
+				E7C8980F1E1A773F00747C4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reach;
+			productName = Template;
+			productReference = E7C898111E1A773F00747C4F /* Reach.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7C898081E1A773F00747C4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = nc43tech;
+				TargetAttributes = {
+					E7952F221E2401DC0005C1AD = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					E7C898101E1A773F00747C4F = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E7C8980B1E1A773F00747C4F /* Build configuration list for PBXProject "Reach" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E7C898071E1A773F00747C4F;
+			productRefGroup = E7C898121E1A773F00747C4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7C898101E1A773F00747C4F /* Reach */,
+				E7952F221E2401DC0005C1AD /* ReachTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7952F211E2401DC0005C1AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C8980F1E1A773F00747C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7C8982D1E1A91E300747C4F /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which /usr/local/bin/swiftlint >/dev/null; then\n    /usr/local/bin/swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7952F1F1E2401DC0005C1AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B9BAB31ED324AF007A4F53 /* Delay.swift in Sources */,
+				E7B9BAB11ED3227D007A4F53 /* ReachDelegateMock.swift in Sources */,
+				E7952F351E2402090005C1AD /* ReachTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7C8980C1E1A773F00747C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7B9BAAB1ED2FFEC007A4F53 /* Network.swift in Sources */,
+				E7B9BAA91ED2E991007A4F53 /* Reach.swift in Sources */,
+				E7B9BAAD1ED315A2007A4F53 /* Callback.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7952F2A1E2401DC0005C1AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7C898101E1A773F00747C4F /* Reach */;
+			targetProxy = E7952F291E2401DC0005C1AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E755E7031E1A9ED2005CC3FE /* Test */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E755E6FA1E1A9EBC005CC3FE /* Test.xcconfig */;
+			buildSettings = {
+			};
+			name = Test;
+		};
+		E755E7041E1A9ED2005CC3FE /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Source/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Reach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		E755E7061E1A9EDD005CC3FE /* Profile */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E755E6F81E1A9EBC005CC3FE /* Profile.xcconfig */;
+			buildSettings = {
+			};
+			name = Profile;
+		};
+		E755E7071E1A9EDD005CC3FE /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Source/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Reach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Profile;
+		};
+		E7952F2C1E2401DC0005C1AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E7952F2D1E2401DC0005C1AD /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Test;
+		};
+		E7952F2E1E2401DC0005C1AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E7952F2F1E2401DC0005C1AD /* Profile */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Tests/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Profile;
+		};
+		E7C898231E1A773F00747C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E755E6F71E1A9EBC005CC3FE /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		E7C898241E1A773F00747C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E755E6F91E1A9EBC005CC3FE /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		E7C898261E1A773F00747C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Source/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Reach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E7C898271E1A773F00747C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Source/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nc43tech.Reach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7952F2B1E2401DC0005C1AD /* Build configuration list for PBXNativeTarget "ReachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7952F2C1E2401DC0005C1AD /* Debug */,
+				E7952F2D1E2401DC0005C1AD /* Test */,
+				E7952F2E1E2401DC0005C1AD /* Release */,
+				E7952F2F1E2401DC0005C1AD /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7C8980B1E1A773F00747C4F /* Build configuration list for PBXProject "Reach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7C898231E1A773F00747C4F /* Debug */,
+				E755E7031E1A9ED2005CC3FE /* Test */,
+				E7C898241E1A773F00747C4F /* Release */,
+				E755E7061E1A9EDD005CC3FE /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7C898251E1A773F00747C4F /* Build configuration list for PBXNativeTarget "Reach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7C898261E1A773F00747C4F /* Debug */,
+				E755E7041E1A9ED2005CC3FE /* Test */,
+				E7C898271E1A773F00747C4F /* Release */,
+				E755E7071E1A9EDD005CC3FE /* Profile */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7C898081E1A773F00747C4F /* Project object */;
+}

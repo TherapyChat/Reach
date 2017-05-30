@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reach  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+
+    <a title="Reach  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          Reach Docs
+        </a>
+         (100% documented)
+      </p>
+    
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="https://github.com/therapychat/Reach">
+            <img class="header-icon" src="img/gh.png"/>
+            View on GitHub
+          </a>
+        </p>
+    
+        <p class="header-col header-col--secondary">
+          <a class="header-link" href="dash-feed://https%3A%2F%2Ftherapychat%2Egithub%2Eio%2FReach%2FReach%2Exml">
+            <img class="header-icon" src="img/dash.png"/>
+            Install in Dash
+          </a>
+        </p>
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">Reach Reference</a>
+      <img class="carat" src="img/carat.png" />
+      Reach  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Reach.html">Reach</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Network.html">Network</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/Network/Via.html">– Via</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ReachDelegate.html">ReachDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <h1 id='reach' class='heading'>Reach</h1>
+
+<p>A modern Reachability network library. </p>
+<h2 id='table-of-contents' class='heading'>Table of Contents</h2>
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#getting-started">Getting Started</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#author">Author</a></li>
+<li><a href="#contribution">Contribution</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#changelog">Changelog</a></li>
+</ul>
+<h2 id='overview' class='heading'>Overview</h2>
+
+<p>Reach is a lightweight reachability framework. 
+We designed Reach to be simple to use and also very flexible. Written on Swift 3.1 and compatible with:</p>
+
+<ul>
+<li>iOS 8.0</li>
+<li>macOS 10.10</li>
+<li>tvOS 9.0</li>
+<li>watchOS 2.0</li>
+</ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>Super friendly API</li>
+<li>Singleton free</li>
+<li>No external dependencies</li>
+<li>Minimal implementation</li>
+<li>Support for <code>iOS/macOS/tvOS/watchOS/Linux</code></li>
+<li>Support for CocoaPods/Carthage/Swift Package Manager</li>
+</ul>
+<h2 id='getting-started' class='heading'>Getting Started</h2>
+
+<p>Reach contains a status property to check the reachability from network. If you want to receive notifications from network changes, you can subscribe to <code>ReachDelegate</code> protocol. </p>
+<pre class="highlight swift"><code><span class="k">let</span> <span class="nv">reach</span> <span class="o">=</span> <span class="kt">Reach</span><span class="p">()</span>
+
+<span class="n">reach</span><span class="o">.</span><span class="nf">start</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="n">reach</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+</code></pre>
+
+<p>You can check the <code>Reach.playground</code> to experimental with more examples. If need to see deeply information you can check our <a href="https://github.com/therapychat/Reach/docs">Documentation</a></p>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>Reach is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">platform</span> <span class="ss">:ios</span><span class="p">,</span> <span class="s1">'10.0'</span>
+<span class="n">use_frameworks!</span>
+<span class="n">swift_version</span> <span class="o">=</span> <span class="s1">'3.0'</span>
+
+<span class="n">target</span> <span class="s1">'MyApp'</span> <span class="k">do</span>
+  <span class="n">pod</span> <span class="s1">'Reach'</span>
+<span class="k">end</span>
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p>You can also install it via <a href="https://github.com/Carthage/Carthage">Carthage</a>. To do so, add the following to your Cartfile:</p>
+<pre class="highlight swift"><code><span class="n">github</span> <span class="err">'</span><span class="n">therapychat</span><span class="o">/</span><span class="kt">Reach</span><span class="err">'</span>
+</code></pre>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>You can use <a href="https://swift.org/package-manager/">Swift Package Manager</a> and specify dependency in <code>Package.swift</code> by adding this:</p>
+<pre class="highlight plaintext"><code>.Package(url: "https://github.com/therapychat/Reach.git", majorVersion: 0)
+</code></pre>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>Sergio Fernández, <a href="mailto:fdz.sergio@gmail.com">fdz.sergio@gmail.com</a></p>
+<h2 id='contribution' class='heading'>Contribution</h2>
+
+<p>For the latest version, please check <a href="https://github.com/therapychat/Reach/tree/develop">develop</a> branch. Changes from this branch will be merged into the <a href="https://github.com/therapychat/Reach/tree/master">master</a> branch at some point.</p>
+
+<ul>
+<li>If you want to contribute, submit a <a href="https://github.com/therapychat/Reach/pulls">pull request</a> against a development <code>develop</code> branch.</li>
+<li>If you found a bug, <a href="https://github.com/therapychat/Reach/issues">open an issue</a>.</li>
+<li>If you have a feature request, <a href="https://github.com/therapychat/Reach/issues">open an issue</a>.</li>
+</ul>
+<h2 id='license' class='heading'>License</h2>
+
+<p>Reach is available under the <code>Apache License 2.0</code>. See the <a href="./LICENSE">LICENSE</a> file for more info.</p>
+<h2 id='changelog' class='heading'>Changelog</h2>
+
+<p>See <a href="./CHANGELOG">CHANGELOG</a> file.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>© 2017 <a class="link" href="https://therapychat.com" target="_blank" rel="external">TherapyChat</a> under <a class="link" href="https://github.com/therapychat/Reach/blob/master/LICENSE" target="_blank" rel="external">open source license</a>.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
