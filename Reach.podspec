@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name     = 'Reach'
-  spec.version  = '1.0.0'
+  spec.version  = '1.1.0'
   spec.summary  = 'Reachability network library.'
   spec.homepage = 'https://github.com/therapychat/Reach'
   spec.license  = { type: 'Apache License, Version 2.0', file: 'LICENSE' }
@@ -15,6 +15,8 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
   spec.source_files = 'Source/*.swift'
   spec.source       = { :git => "https://github.com/therapychat/Reach.git", :tag => spec.version.to_s }
-  spec.framework    = 'SystemConfiguration'
+  spec.ios.framework = 'SystemConfiguration'
+  spec.osx.framework = 'SystemConfiguration'
+  spec.tvos.framework = 'SystemConfiguration'
 
 end

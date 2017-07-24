@@ -6,10 +6,11 @@
 //  Copyright © 2017 nc43tech. All rights reserved.
 //
 
-#if !os(watchOS)
-
 import Foundation
-import SystemConfiguration
+
+#if !os(watchOS)
+    import SystemConfiguration
+#endif
 
 /// Delegate responsible to notify of changes in `Network` connection
 public protocol ReachDelegate: class {
@@ -33,8 +34,12 @@ public extension ReachDelegate {
 /// Responsible to observe network changes
 public final class Reach {
 
+    #if !os(watchOS)
+
     private let reachability: SCNetworkReachability?
     private let queue = DispatchQueue(label: "com.nc43tech.Reachability")
+
+    #endif
 
     /// Delegate object to notify events
     public weak var delegate: ReachDelegate?
@@ -60,22 +65,24 @@ public final class Reach {
     /// - parameter hostname:  URL for hostname
     ///
     public init(with hostname: String) {
-        reachability = SCNetworkReachabilityCreateWithName(nil, hostname)
+        #if !os(watchOS)
+            reachability = SCNetworkReachabilityCreateWithName(nil, hostname)
+        #endif
     }
 
     /// Creates an instance without specific `hostname`
     public init() {
+        #if !os(watchOS)
+            var zeroAddress = sockaddr_in()
+            zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
+            zeroAddress.sin_family = sa_family_t(AF_INET)
 
-        var zeroAddress = sockaddr_in()
-        zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
-        zeroAddress.sin_family = sa_family_t(AF_INET)
-
-        reachability = withUnsafePointer(to: &zeroAddress, {
-            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
-                SCNetworkReachabilityCreateWithAddress(nil, $0)
-            }
-        })
-
+            reachability = withUnsafePointer(to: &zeroAddress, {
+                $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
+                    SCNetworkReachabilityCreateWithAddress(nil, $0)
+                }
+            })
+        #endif
     }
 
     deinit {
@@ -86,28 +93,35 @@ public final class Reach {
 
     /// Function to start observe `Network` changes
     public func start() {
-        var context = SCNetworkReachabilityContext(version: 0,
-                                                   info: nil,
-                                                   retain: nil,
-                                                   release: nil,
-                                                   copyDescription: nil)
+        #if !os(watchOS)
+            var context = SCNetworkReachabilityContext(version: 0,
+                                                       info: nil,
+                                                       retain: nil,
+                                                       release: nil,
+                                                       copyDescription: nil)
 
-        context.info = UnsafeMutableRawPointer(Unmanaged<Reach>.passUnretained(self).toOpaque())
+            context.info = UnsafeMutableRawPointer(Unmanaged<Reach>.passUnretained(self).toOpaque())
 
-        guard let network = reachability else { return }
+            guard let network = reachability else { return }
 
-        SCNetworkReachabilitySetCallback(network, callback, &context)
-        SCNetworkReachabilitySetDispatchQueue(network, queue)
+            SCNetworkReachabilitySetCallback(network, callback, &context)
+            SCNetworkReachabilitySetDispatchQueue(network, queue)
+        #endif
     }
 
     /// Function to remove observer on `Network` changes
     public func stop() {
+        #if !os(watchOS)
 
-        guard let network = reachability else { return }
+            guard let network = reachability else { return }
 
-        SCNetworkReachabilitySetCallback(network, nil, nil)
-        SCNetworkReachabilitySetDispatchQueue(network, nil)
+            SCNetworkReachabilitySetCallback(network, nil, nil)
+            SCNetworkReachabilitySetDispatchQueue(network, nil)
+
+        #endif
     }
+
+    #if !os(watchOS)
 
     /// Change `Network` status
     func reachability(change flags: SCNetworkReachabilityFlags) {
@@ -122,9 +136,9 @@ public final class Reach {
                 network = .reachable(.wwan)
             }
         #endif
-
+        
         status = network
     }
-}
 
-#endif
+    #endif
+}

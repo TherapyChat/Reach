@@ -1,5 +1,8 @@
 # Reach CHANGELOG
 
+## 1.1.0
+Make Reach class available to watchOS.
+
 ## 1.0.0
 
 Initial release.

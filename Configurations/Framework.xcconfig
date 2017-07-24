@@ -34,7 +34,7 @@ SKIP_INSTALL = YES
 // Allows use of APIs that are not available
 // to app extensions and linking to frameworks
 // that have not been built with this setting enabled.
-APPLICATION_EXTENSION_API_ONLY = NO
+APPLICATION_EXTENSION_API_ONLY = YES
 
 // Configuration swift version
 SWIFT_VERSION = 3.0
