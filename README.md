@@ -1,6 +1,12 @@
-# Reach
+<p align="center"><img width="300" src="./resources/logo.svg"></p>
 
-A modern Reachability network library. 
+![build](https://img.shields.io/travis/TherapyChat/Reach.svg)
+![swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
+![platforms](https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS%20%7C%20watchOS-333333.svg)
+![cocoapods](https://img.shields.io/cocoapods/v/Reach.svg)
+![carthage](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg)
+![coverage](https://img.shields.io/codecov/c/github/TherapyChat/Reach.svg)
+![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)
 
 ## Table of Contents
 * [Overview](#overview)

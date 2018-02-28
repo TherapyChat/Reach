@@ -27,7 +27,10 @@ ONLY_ACTIVE_ARCH = NO
 STRIP_INSTALLED_PRODUCT = YES
 
 // The optimization level (-Onone, -O, -Owholemodule) for the produced Swift binary
-SWIFT_OPTIMIZATION_LEVEL = -Owholemodule
+SWIFT_OPTIMIZATION_LEVEL = -O
+
+// Swift compilation mode
+SWIFT_COMPILATION_MODE = wholemodule
 
 // Whether to perform App Store validation checks
 VALIDATE_PRODUCT = YES

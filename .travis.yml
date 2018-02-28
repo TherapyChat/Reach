@@ -1,0 +1,17 @@
+# references:
+# * http://www.objc.io/issue-6/travis-ci.html
+# * https://github.com/supermarin/xcpretty#usage
+
+osx_image: xcode9.2
+language: swift
+
+before_install:
+  - gem install cocoapods
+  - scripts/setup
+
+script:
+  - scripts/tests
+  - pod lib lint
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

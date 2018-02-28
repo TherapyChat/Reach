@@ -11,3 +11,8 @@ CODE_SIGN_ENTITLEMENTS =
 
 // Allow @testable imports
 ENABLE_TESTABILITY = YES
+
+// Allows use of APIs that are not available
+// to app extensions and linking to frameworks
+// that have not been built with this setting enabled.
+APPLICATION_EXTENSION_API_ONLY = NO

@@ -1,4 +1,4 @@
 #!/bin/sh
 
-xcodebuild -workspace Reach.xcworkspace -scheme Reach -configuration Test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7' -enableCodeCoverage YES build-for-testing test-without-building | xcpretty
-slather coverage
+xcodebuild -workspace Reach.xcworkspace -scheme Reach -configuration Test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone X' -enableCodeCoverage YES build-for-testing test-without-building | xcpretty
+# slather coverage

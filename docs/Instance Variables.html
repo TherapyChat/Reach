@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Enumerations  Reference</title>
+    <title>Instance Variables  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
   <body>
 
 
-    <a title="Enumerations  Reference"></a>
+    <a title="Instance Variables  Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -41,7 +41,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="index.html">Reach Reference</a>
       <img class="carat" src="img/carat.png" />
-      Enumerations  Reference
+      Instance Variables  Reference
     </p>
 
     <div class="content-wrapper">
@@ -116,8 +116,8 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>Enumerations</h1>
-            <p>The following enumerations are available globally.</p>
+            <h1>Instance Variables</h1>
+            <p>The following instance variables are available globally.</p>
 
           </div>
         </section>
@@ -129,9 +129,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:5Reach7NetworkO"></a>
-                    <a name="//apple_ref/swift/Enum/Network" class="dashAnchor"></a>
-                    <a class="token" href="#/s:5Reach7NetworkO">Network</a>
+                    <a name="/s:5ReachAAC8delegateAA0A8Delegate_pSgXwv"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5ReachAAC8delegateAA0A8Delegate_pSgXwv">delegate</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -139,15 +139,41 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Network reachability</p>
+                        <p>Delegate object to notify events</p>
 
-                        <a href="Enums/Network.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">Network</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="Protocols/ReachDelegate.html">ReachDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:5ReachAAC6statusAA7NetworkOv"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:5ReachAAC6statusAA7NetworkOv">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Current status of <code><a href="Enums/Network.html">Network</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="Enums/Network.html">Network</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">notReachable</span></code></pre>
 
                         </div>
                       </div>

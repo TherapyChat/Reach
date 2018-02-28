@@ -1,5 +1,8 @@
 # Reach CHANGELOG
 
+## 1.2.0
+Change constructor of Reachability.
+
 ## 1.1.0
 Make Reach class available to watchOS.
 

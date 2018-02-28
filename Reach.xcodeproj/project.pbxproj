@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E7952F281E2401DC0005C1AD /* Reach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C898111E1A773F00747C4F /* Reach.framework */; };
-		E7952F301E2401E60005C1AD /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7952F191E2401460005C1AD /* Nimble.framework */; };
-		E7952F331E2401F90005C1AD /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E7952F191E2401460005C1AD /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E7952F351E2402090005C1AD /* ReachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74098501E23FD230073A728 /* ReachTests.swift */; };
+		E7A843D22046EBD400513A33 /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = E7A843D12046EBD400513A33 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E7B9BAA91ED2E991007A4F53 /* Reach.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAA81ED2E991007A4F53 /* Reach.swift */; };
 		E7B9BAAB1ED2FFEC007A4F53 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAAA1ED2FFEC007A4F53 /* Network.swift */; };
 		E7B9BAAD1ED315A2007A4F53 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAAC1ED315A2007A4F53 /* Callback.swift */; };
 		E7B9BAB11ED3227D007A4F53 /* ReachDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAB01ED3227D007A4F53 /* ReachDelegateMock.swift */; };
-		E7B9BAB31ED324AF007A4F53 /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B9BAB21ED324AF007A4F53 /* Delay.swift */; };
 		E7C898221E1A773F00747C4F /* Reach.h in Headers */ = {isa = PBXBuildFile; fileRef = E7C898141E1A773F00747C4F /* Reach.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E7952F331E2401F90005C1AD /* Nimble.framework in Copy Frameworks */,
+				E7A843D22046EBD400513A33 /* Nimble.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,15 +49,13 @@
 		E755E6F91E1A9EBC005CC3FE /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		E755E6FA1E1A9EBC005CC3FE /* Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Test.xcconfig; sourceTree = "<group>"; };
 		E755E6FB1E1A9EBC005CC3FE /* Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
-		E76567391E55D434004F48D7 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../../Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
-		E7952F191E2401460005C1AD /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		E7952F231E2401DC0005C1AD /* ReachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7952F271E2401DC0005C1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A843D12046EBD400513A33 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		E7B9BAA81ED2E991007A4F53 /* Reach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reach.swift; sourceTree = "<group>"; };
 		E7B9BAAA1ED2FFEC007A4F53 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		E7B9BAAC1ED315A2007A4F53 /* Callback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
 		E7B9BAB01ED3227D007A4F53 /* ReachDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachDelegateMock.swift; sourceTree = "<group>"; };
-		E7B9BAB21ED324AF007A4F53 /* Delay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
 		E7C898111E1A773F00747C4F /* Reach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C898141E1A773F00747C4F /* Reach.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reach.h; sourceTree = "<group>"; };
 		E7C898151E1A773F00747C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7952F281E2401DC0005C1AD /* Reach.framework in Frameworks */,
-				E7952F301E2401E60005C1AD /* Nimble.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,8 +114,7 @@
 		E76DB9461E1CF7FD00D7FA0C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E76567391E55D434004F48D7 /* Result.framework */,
-				E7952F191E2401460005C1AD /* Nimble.framework */,
+				E7A843D12046EBD400513A33 /* Nimble.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,7 +124,6 @@
 			children = (
 				E74098501E23FD230073A728 /* ReachTests.swift */,
 				E7B9BAB01ED3227D007A4F53 /* ReachDelegateMock.swift */,
-				E7B9BAB21ED324AF007A4F53 /* Delay.swift */,
 				E7952F271E2401DC0005C1AD /* Info.plist */,
 			);
 			path = Tests;
@@ -226,7 +219,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = nc43tech;
 				TargetAttributes = {
 					E7952F221E2401DC0005C1AD = {
@@ -297,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7B9BAB31ED324AF007A4F53 /* Delay.swift in Sources */,
 				E7B9BAB11ED3227D007A4F53 /* ReachDelegateMock.swift in Sources */,
 				E7952F351E2402090005C1AD /* ReachTests.swift in Sources */,
 			);
@@ -436,7 +428,7 @@
 				E7952F2F1E2401DC0005C1AD /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E7C8980B1E1A773F00747C4F /* Build configuration list for PBXProject "Reach" */ = {
 			isa = XCConfigurationList;
@@ -447,7 +439,7 @@
 				E755E7061E1A9EDD005CC3FE /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		E7C898251E1A773F00747C4F /* Build configuration list for PBXNativeTarget "Reach" */ = {
 			isa = XCConfigurationList;
@@ -458,7 +450,7 @@
 				E755E7071E1A9EDD005CC3FE /* Profile */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

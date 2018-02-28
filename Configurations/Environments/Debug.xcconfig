@@ -40,6 +40,9 @@ OTHER_SWIFT_FLAGS = -D DEBUG
 // This enables conditional compilation with #if DEBUG
 SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
 
+// Swift compilation mode
+SWIFT_COMPILATION_MODE = singlefile
+
 // Whether to strip debugging symbols when copying the built product to its
 // final installation location
 STRIP_INSTALLED_PRODUCT = NO

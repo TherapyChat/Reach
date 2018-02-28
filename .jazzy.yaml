@@ -13,5 +13,5 @@ disable_search: true
 skip_undocumented: false
 hide_documentation_coverage: false
 
-copyright: '© 2017 [TherapyChat](https://therapychat.com) under [open source license](https://github.com/therapychat/Reach/blob/master/LICENSE).'
-swift_version: '3.1'
+copyright: '© 2018 [TherapyChat](https://therapychat.com) under [open source license](https://github.com/therapychat/Reach/blob/master/LICENSE).'
+swift_version: '4.0.3'

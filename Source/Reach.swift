@@ -37,7 +37,7 @@ public final class Reach {
     #if !os(watchOS)
 
     private let reachability: SCNetworkReachability?
-    private let queue = DispatchQueue(label: "com.nc43tech.Reachability")
+    private let queue = DispatchQueue(label: "com.reach.queue", qos: .background)
 
     #endif
 
@@ -73,15 +73,11 @@ public final class Reach {
     /// Creates an instance without specific `hostname`
     public init() {
         #if !os(watchOS)
-            var zeroAddress = sockaddr_in()
-            zeroAddress.sin_len = UInt8(MemoryLayout<sockaddr_in>.size)
-            zeroAddress.sin_family = sa_family_t(AF_INET)
+            var zeroAddress = sockaddr()
+            zeroAddress.sa_len = UInt8(MemoryLayout<sockaddr>.size)
+            zeroAddress.sa_family = sa_family_t(AF_INET)
 
-            reachability = withUnsafePointer(to: &zeroAddress, {
-                $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {
-                    SCNetworkReachabilityCreateWithAddress(nil, $0)
-                }
-            })
+            reachability = SCNetworkReachabilityCreateWithAddress(nil, &zeroAddress)
         #endif
     }
 

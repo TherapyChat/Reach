@@ -22,12 +22,6 @@ final class ReachTests: XCTestCase {
         let reach = Reach(with: hostname)
         reach.start()
 
-        waitUntil(timeout: 5) { done in
-            delay(1) {
-                done()
-            }
-        }
-
         expect(reach.status).toEventually(equal(.reachable(.wifi)))
     }
 
@@ -37,12 +31,6 @@ final class ReachTests: XCTestCase {
 
         let reach = Reach(with: hostname)
         reach.start()
-
-        waitUntil(timeout: 5) { done in
-            delay(1) {
-                done()
-            }
-        }
 
         expect(reach.status).toEventually(equal(Network.notReachable))
     }
@@ -57,12 +45,6 @@ final class ReachTests: XCTestCase {
         reach.delegate = mock
         reach.start()
 
-        waitUntil(timeout: 5) { done in
-            delay(1) {
-                done()
-            }
-        }
-
         expect(mock.isReachable).toEventually(beTrue())
     }
 
@@ -70,12 +52,6 @@ final class ReachTests: XCTestCase {
 
         let reach = Reach()
         reach.start()
-
-        waitUntil(timeout: 5) { done in
-            delay(1) {
-                done()
-            }
-        }
 
         expect(reach.status).toEventually(equal(Network.notReachable))
     }
